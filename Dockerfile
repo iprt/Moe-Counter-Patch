@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN yarn install
+RUN yarn install --registry=https://mirrors.cloud.tencent.com/npm/
 
 EXPOSE 3000
 
